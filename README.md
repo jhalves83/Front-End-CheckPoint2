@@ -36,3 +36,6 @@ do mouse sobre o campo e o campo aumenta de tamanho.
 e abuse da sua criatividade
 5. Suba o trabalho no Github e no GitPages ou no Replit e envie o link pelo
 formulário
+
+
+### STATUS: em desenvolvimento...
