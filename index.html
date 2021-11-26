@@ -1,12 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt_BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cadastre-se</title>
 </head>
 <body>
-    
+    <form class="formulario" action="" method="get">
+        <div>
+            <label class="formulario__label" for="nome">Nome</label>
+                <input class="formulario__nome" type="text" id="nome" maxlength="100"
+                        name="nome" placeholder="Seu nome completo">
+        </div>
+        <div>
+            <label class="formulario__label" for="email">E-mail</label>
+                <input class="formulario__email" type="email" id="email"
+                        name="email" placeholder="Digite seu melhor email">
+        </div>
+        <div>
+            <label class="formulario__label" for="telefone">Telefone</label>
+                <input class="formulario__telefone" type="tel" id="telefone" 
+                        name="telefone" placeholder="Informe seu telefone">
+        </div>
+        <div>
+            <label class="formulario__label" for="dataNascimento">Data de Nascimento</label>
+                <input class="formulario__nascimento" type="date" id="dataNascimento" 
+                        name="dataNascimento">
+        </div>
+        <div class="formulario__radios">
+            <h4 class="formulario__perguntaIdade">Você é maior de idade?</h4>
+            <div>
+                <input type="radio" id="sim" name="maiorIdade" value="sim">
+                <label class="formulario__maiorIdade" for="sim">Sim</label>
+                <input type="radio" id="nao" name="menorIdade" value="nao">
+                <label class="formulario__menorIdade" for="nao">Não</label>
+            </div>
+        </div>
+        <div class="formulario__select">
+            <h4 class="formulario__enunciadoSelect">Ponto interessante na cidade</h4>
+            <select name="select">
+                <option selected disabled>Selecione</option>
+                <option value="opcao1">Opção 1</option>
+                <option value="opcao2">Opção 2</option>
+                <option value="opcao3">Opção 3</option>
+            </select>
+        </div>
+        <div>
+            <h4 class="formulario__perguntaInteresse">Qual o seu interesse na cidade?</h4>
+            <div>
+                <input type="checkbox" id="turista" name="turista" value="turista">
+                <label class="formulario__turista" for="turista">Turista</label>
+            </div>
+            <div>
+                <input type="checkbox" id="residente" name="residente" value="residente">
+                <label class="formulario__residente" for="residente">Residente</label>
+            </div>
+            <div>
+                <input type="checkbox" id="estudante" name="estudante" value="estudante" >
+                <label class="formulario__estudante" for="estudante">Estudante</label>
+            </div>
+        </div>
+        <div class="formulario__button">
+            <button type="submit">Enviar</button>
+        </div>
+    </form>
 </body>
 </html>
