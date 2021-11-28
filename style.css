@@ -122,3 +122,12 @@ h4{
     text-decoration: none;
     margin-left: 12px;
 }
+h2{
+    color: #ff5800;
+}
+.fim{
+    height: 60px;
+    background-color: rgb(0, 0, 0);
+    width: 1176px;
+    color: white;
+}
