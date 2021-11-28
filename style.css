@@ -81,13 +81,9 @@ h1{
     border-color: black;
     border-style: double;
     position: relative;
-    margin-left: 210px;
-    
-    
+    margin-left: 210px;    
 }
-.rodape{
-   
-}
+
 .rodape_link1{
     display: inline-block;
     width: 200px;
