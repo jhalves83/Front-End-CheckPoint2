@@ -4,131 +4,148 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Grupo 6 Viagens</title>
+    <meta name="description" content="Descrição da página">
+    <meta name="robots" content="noindex, noimageindex">
+    <meta http-equiv="content-language" content="pt-br">
+
+    <meta name="author" content="Fábio Perez">
+    <meta name="author" content="Fredson Junior">
+    <meta name="author" content="Hugo Almeida">
+    <meta name="author" content="Jonathan Alves">
+    <meta name="author" content="Marcela Schiavoni">
+    <meta name="author" content="Raphael Dutra">
+    <meta name="author" content="Thalles Cabral">
+
+    <link rel="shortcut icon" href="./img/grupo_6_viagens_favicon.ico">
     <link href="./style.css" rel="stylesheet">
-    <title>ultima</title>
+
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Grupo 6 Viagens">
+    <meta property="og:description" content="Site com formulário para Checkpoint 2 da disciplina Front-End I do Curso Certified Tech Developer da Digital House">
+    <meta property="og:url" content="ATENÇÃO!!! AQUI COLOCAR O LINK DO GIT PAGES">
+    <meta property="og:site_name" content="Grupo 6 Viagens">
+    <meta property="og:image" content="./img/logo.png">
 </head>
-<body>
-   <div class = "site">
-        <div class = "cabecalho">
-           
-            <img class = "logo" src ="./img/logo.png">
-            <a class = link href="../pages/pagina2.html">Pagina 1</a>
-            <a class = link href="../pages/pagina2.html">Pagina 2</a>
-            <a class = link href="../pages/pagina2.html">Pagina 3</a>
-            <a class = link href="../pages/pagina2.html">Pagina 4</a>
-
-            <img class = "rsocial" src="./img/face.png">
-            <img class = "rsocial" src="./img/instapng.png">
-            <img class = "rsocial" src="./img/twitterpng.png">
-            <img class = "rsocial" src="./img/youtube.png">
-
-        </div>
-        <div class ="menu">
-        </div>
-        <div class = "corpo">
-            
+<body class="corpo">  
+        <header class="cabecalho">
+            <img class="cabecalho__logo" src ="./img/logo.png">
+            <nav class="cabecalho_links">
+                <a class=link href="../pages/pagina1.html">Pagina 1</a>
+                <a class=link href="../pages/pagina2.html">Pagina 2</a>
+                <a class=link href="../pages/pagina3.html">Pagina 3</a>
+                <a class=link href="../pages/pagina4.html">Pagina 4</a>
+            </nav>
+            <div class="cabecalho_redes_sociais">
+                <a href=""><img class= "redes_sociais_logo" src="./img/face.png"></a>
+                <a href=""><img class= "redes_sociais_logo" src="./img/instapng.png"></a>
+                <a href=""><img class= "redes_sociais_logo" src="./img/twitterpng.png"></a>
+                <a href=""><img class= "redes_sociais_logo" src="./img/youtube.png"></a>
+            </div>
+        </header>
            <!-- <img class = "fundo_corpo" src= "./img/fundo2.jpg">-->
-           <div class = info>
-                <h1>
-                Debitis mollitia et aliquid error aut dolorem ipsam.
-                </h1>
-                <p>
-                Lorem ipsum dolor sit amet. 
-                Est modi quibusdam ex labore recusandae qui fugit omnis ut repudiandae doloribus ut 
-                vero doloribus ut doloremque fugiat! Sed dolorem quia rem blanditiis eius ut deleniti earum est excepturi iste.
-                </p>
-            </div> 
-            <!--inicio formulario-->
-
-            <div class = "divformulario">
+        <main class="principal">
+            <section class="principal__info">
+                <article>
+                    <h1 class="titulo">
+                    Debitis mollitia et aliquid error aut dolorem ipsam.
+                    </h1 class="titulo">
+                    <p>
+                    Lorem ipsum dolor sit amet. 
+                    Est modi quibusdam ex labore recusandae qui fugit omnis ut repudiandae doloribus ut 
+                    vero doloribus ut doloremque fugiat! Sed dolorem quia rem blanditiis eius ut deleniti earum est excepturi iste.
+                    </p>
+                </article>
+            </section>
+            <aside class="principal__formulario">
                 <p>
                     Lorem ipsum dolor sit amet. 
                     Est modi quibusdam ex labore recusandae qui fugit omnis ut repudiandae doloribus ut 
                     vero doloribus ut doloremque 
                 </p>
-            <form class="formulario" action="" method="get">
-                <div>
-                    <label class="formulario__label" for="nome">Nome</label>
-                        <input class="formulario__nome" type="text" id="nome" maxlength="100"
-                                name="nome" placeholder="Seu nome completo">
-                </div>
-                <div>
-                    <label class="formulario__label" for="email">E-mail</label>
-                        <input class="formulario__email" type="email" id="email"
-                                name="email" placeholder="Digite seu melhor email">
-                </div>
-                <div>
-                    <label class="formulario__label" for="telefone">Telefone</label>
-                        <input class="formulario__telefone" type="tel" id="telefone" 
-                                name="telefone" placeholder="Informe seu telefone">
-                </div>
-                <div>
-                    <label class="formulario__label" for="dataNascimento">Data de Nascimento</label>
-                        <input class="formulario__nascimento" type="date" id="dataNascimento" 
-                                name="dataNascimento">
-                </div>
-                <div class="formulario__radios">
-                    <h4 class="formulario__perguntaIdade">Você é maior de idade?</h4>
-                    <div>
-                        <input type="radio" id="maiorIdade" name="faixaidade" value="sim">
-                        <label class="formulario__maiorIdade" for="sim">Sim</label>
-                        <input type="radio" id="menorIdade" name="faixaidade" value="nao">
-                        <label class="formulario__menorIdade" for="nao">Não</label>
+                <form action="" method="get">
+                    <div class="formulario_grupo">
+                        <label class="formulario__label" for="nome">Nome</label>
+                            <input class="formulario__nome" type="text" id="nome" maxlength="100"
+                                    name="nome" placeholder="Seu nome completo">
                     </div>
-                </div>
-                <div class="formulario__select">
-                    <h4 class="formulario__enunciadoSelect">Ponto interessante na cidade</h4>
-                    <select name="select">
-                        <option selected disabled>Selecione</option>
-                        <option value="opcao1">Opção 1</option>
-                        <option value="opcao2">Opção 2</option>
-                        <option value="opcao3">Opção 3</option>
-                    </select>
-                </div>
-                <div>
-                    <h4 class="formulario__perguntaInteresse">Qual o seu interesse na cidade?</h4>
-                    <div>
-                        <input type="checkbox" id="turista" name="turista" value="turista">
-                        <label class="formulario__turista" for="turista">Turista</label>
+                    <div class="formulario_grupo">
+                        <label class="formulario__label" for="email">E-mail</label>
+                            <input class="formulario__email" type="email" id="email"
+                                    name="email" placeholder="Digite seu melhor email">
+                    </div>
+                    <div class="formulario__grupo">
+                        <label class="formulario__label" for="telefone">Telefone</label>
+                            <input class="formulario__telefone" type="tel" id="telefone" 
+                                    name="telefone" placeholder="Informe seu telefone">
+                    </div>
+                    <div class="formulario__grupo">
+                        <label class="formulario__label" for="dataNascimento">Data de Nascimento</label>
+                            <input class="data__nascimento" type="date" id="dataNascimento" 
+                                    name="dataNascimento">
+                    </div>
+                    <div class="formulario__radios">
+                        <h4 class="formulario__enunciado">Você é maior de idade?</h4>
+                        <div>
+                            <input type="radio" id="maiorIdade" name="faixaidade" value="sim">
+                            <label class="radio__maiorIdade" for="sim">Sim</label>
+                            <input type="radio" id="menorIdade" name="faixaidade" value="nao">
+                            <label class="formulario__menorIdade" for="nao">Não</label>
+                        </div>
+                    </div>
+                    <div class="formulario__select">
+                        <h4 class="formulario__enunciado">Ponto interessante na cidade</h4>
+                        <select name="select">
+                            <option selected disabled>Selecione</option>
+                            <option value="opcao1">Opção 1</option>
+                            <option value="opcao2">Opção 2</option>
+                            <option value="opcao3">Opção 3</option>
+                        </select>
                     </div>
                     <div>
-                        <input type="checkbox" id="residente" name="residente" value="residente">
-                        <label class="formulario__residente" for="residente">Residente</label>
+                        <h4 class="formulario__enunciado">Qual o(s) seu(s) interesse(s) na cidade?</h4>
+                        <div>
+                            <input type="checkbox" id="turista" name="turista" value="turista">
+                            <label class="formulario__turista" for="turista">Turista</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="residente" name="residente" value="residente">
+                            <label class="formulario__residente" for="residente">Residente</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="estudante" name="estudante" value="estudante" >
+                            <label class="formulario__estudante" for="estudante">Estudante</label>
+                        </div>
                     </div>
-                    <div>
-                        <input type="checkbox" id="estudante" name="estudante" value="estudante" >
-                        <label class="formulario__estudante" for="estudante">Estudante</label>
+                    <div class="formulario__button">
+                        <button type="reset">Limpar</button>
+                        <button type="submit">Enviar</button>
                     </div>
-                </div>
-                <div class="formulario__button">
-                    <button type="reset">Limpar</button>
-                    <button type="submit">Enviar</button>
-                </div>
-            </form>
-        </div>
-            <!--fim formulario-->
-
-        </div>
-        <div class = "rodape">
-            <div class ="rodape_link1">
+                </form>
+            </aside>
+        </main>
+        <section class="pontos_fortes">
+            <article class="pontos_fortes_link1">
                 <h4>Lorem ipsum dolor.</h4>
-                <img class = "icone_rodape" src="./img/icone_rodape.png">
-                <a class = "link_rodape" href="../pages/pagina2.html">Ea magni nemo et nobis maiores id neque alias ut enim quasi qui harum</a>
-            </div>
-            <div class ="rodape_link2">
-                <img class = "icone_rodape" src="./img/icone_rodape.png">
-                <a class = "link_rodape" href="../pages/pagina2.html">Pagina 2</a>
-            </div>
-            <div class ="rodape_link3">
-                <img class = "icone_rodape" src="./img/icone_rodape.png">
-                <a class = "link_rodape" href="../pages/pagina2.html">Pagina 3</a>
-            </div>
-        </div>
-        <div class = "newsletter">
-            <h1>Lorem ipsum dolor sit amet.</h1>
+                <img class="pontos_fortes_icone" src="./img/icone_rodape.png">
+                <a class="pontos_fortes_link" href="../pages/pagina2.html">Ea magni nemo et nobis maiores id neque alias ut enim quasi qui harum</a>
+            </article>
+            <article class="pontos_fortes_link2">
+                <img class="pontos_fortes_icone" src="./img/icone_rodape.png">
+                <a class="pontos_fortes_link" href="../pages/pagina2.html">Pagina 2</a>
+            </article>
+            <article class="pontos_fortes_link3">
+                <img class="pontos_fortes_icone" src="./img/icone_rodape.png">
+                <a class="pontos_fortes_link" href="../pages/pagina2.html">Pagina 3</a>
+            </article>
+        </section>
+        <section class="newsletter">
+            <h1 class="titulo">Lorem ipsum dolor sit amet.</h1 class="titulo">
             <h2>Lorem ipsum dolor sit amet. Ea provident dicta qui iusto quasi a dicta dicta sed voluptatem minima. 
                 In quam sint ut dolores ducimus sunt dolorem.</h2>
-                
+            <form class="newsletter_form" action="">    
                 <label class="formulario__label" for="nome">Nome</label>
                         <input class="formulario__nome" type="text" id="nome" maxlength="100"
                                 name="nome" placeholder="Seu nome completo">
@@ -136,17 +153,12 @@
                 <input class="formulario__email" type="email" id="email"
                         name="email" placeholder="Digite seu melhor email">
                         <button type="submit">Enviar</button>
-
-        </div>
-
-        <div class = "fim">
+            </form>
+        </section>
+        <footer class="rodape">
             <div>
-                <h3>Lorem ipsum dolor.</h3>
-                          
+                <h3>Lorem ipsum dolor.</h3>          
             </div>
-   </div>
-
-
-
+        </footer>
 </body>
 </html>

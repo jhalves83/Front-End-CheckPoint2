@@ -1,7 +1,5 @@
-body{
+.corpo{
     background-color: rgb(41, 41, 41);
-}
-.site{
     width: 1200px;
     min-height: 1100px;
     margin-left: auto;
@@ -12,22 +10,18 @@ body{
     
 }
 .cabecalho{
-    height: 150px;
-    
-    
-}
-.menu{
-    height: 50px;
+    height: 200px;
+    display: block;
     
 }
-.corpo{
+.principal{
     height: 800px;
     background-image: url("./img/fundo2.jpg");
     background-repeat:no-repeat;
     background-size: 1120px 800px;
     
 }
-.rodape{
+.pontos_fortes{
     height: 130px;
     background-color: rgb(0, 0, 0);
     width: 1176px;
@@ -44,14 +38,14 @@ body{
     color: #ff5800;
     
 }
-.logo{
+.cabecalho__logo{
     width: 200px;
     right: 200px;
     float: left;
     margin-left: 0px;
     
 }
-.rsocial{
+.redes_sociais_logo{
     width: 40px;
     right: 40px;
     margin-left: 5px;
@@ -61,10 +55,10 @@ body{
     display: inline-block;
     background-image: image-set;
 }  
-h1{
+.titulo{
     color: #ff5800;
 } 
-.info{
+.principal__info{
     display: inline-block;
     text-align: justify;
     width: 400px;
@@ -73,8 +67,8 @@ h1{
     margin-right: 20px;
     margin-left: 50px;
     
-    }
-.divformulario{
+}
+.principal__formulario{
     display: inline-block;
     background-color:#ff5800;
     width: 485px;
@@ -86,8 +80,11 @@ h1{
     position: relative;
     margin-left: 210px;    
 }
-
-.rodape_link1{
+.formulario__enunciado {
+    text-align: justify;
+    color: azure; 
+}
+.pontos_fortes_link1{
     display: inline-block;
     width: 200px;
     right: 10px;
@@ -95,17 +92,17 @@ h1{
     border-style: double;
     margin:10px;
 }
-.rodape_link2{
+.pontos_fortes_link2{
     display: inline-block;
     width: 200px;
     right: 40px;
 }
-.rodape_link3{
+.pontos_fortes_link3{
     display: inline-block;
     width: 200px;
     right: 40px;
 }
-.icone_rodape{
+.pontos_fortes_icone{
     width: 60px;
     right: 60px;
     margin-right: 100px;
@@ -114,7 +111,7 @@ h4{
     color: #ff5800;
     margin-left: 50px;
 }
-.link_rodape{
+.pontos_fortes_link{
     color: white; 
     font-size: 12px;
     margin-top: 350px;
@@ -124,7 +121,7 @@ h4{
 h2{
     color: #ff5800;
 }
-.fim{
+.rodape{
     height: 60px;
     background-color: rgb(0, 0, 0);
     width: 1176px;
