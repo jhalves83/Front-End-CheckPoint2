@@ -1,0 +1,124 @@
+.site{
+    width: 1200px;
+    min-height: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+    
+}
+.cabecalho{
+    height: 150px;
+    
+    
+}
+.menu{
+    height: 50px;
+    
+}
+.corpo{
+    height: 800px;
+    background-image: url("./img/fundo2.jpg");
+    background-repeat:no-repeat;
+    background-size: 1120px 800px;
+    
+}
+.rodape{
+    height: 130px;
+    background-color: rgb(0, 0, 0);
+    width: 1176px;
+}
+.link{
+    text-decoration: none;
+    float: left;
+    font-size: 30px;
+    margin-top: 60px;
+    margin-left: 40px;
+    border:solid;
+    border-radius: 2px;
+    border-color: black;
+    color: #ff5800;
+    
+}
+.logo{
+    width: 200px;
+    right: 200px;
+    float: left;
+    margin-left: 0px;
+    
+}
+.rsocial{
+    width: 40px;
+    right: 40px;
+    margin-left: 5px;
+    margin-top: 60px;
+}
+.fundo_corpo{
+    display: inline-block;
+    background-image: image-set;
+}  
+h1{
+    color: #ff5800;
+} 
+.info{
+    display: inline-block;
+    text-align: justify;
+    width: 400px;
+    height: 794px;
+    position: relative;
+    margin-right: 20px;
+    margin-left: 50px;
+    
+    }
+.divformulario{
+    display: inline-block;
+    background-color:#ff5800;
+    width: 485px;
+    height: 794px;
+    text-align: justify;
+    color: azure;
+    border-color: black;
+    border-style: double;
+    position: relative;
+    margin-left: 210px;
+    
+    
+}
+.rodape{
+   
+}
+.rodape_link1{
+    display: inline-block;
+    width: 200px;
+    right: 10px;
+    border-color: aliceblue;
+    border-style: double;
+    margin:10px;
+}
+.rodape_link2{
+    display: inline-block;
+    width: 200px;
+    right: 40px;
+}
+.rodape_link3{
+    display: inline-block;
+    width: 200px;
+    right: 40px;
+}
+.icone_rodape{
+    width: 60px;
+    right: 60px;
+    margin-right: 100px;
+}
+h4{
+    color: #ff5800;
+    margin-left: 50px;
+}
+.link_rodape{
+    color: white; 
+    font-size: 12px;
+    margin-top: 350px;
+    text-decoration: none;
+    margin-left: 12px;
+}
