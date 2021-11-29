@@ -1,13 +1,8 @@
 .corpo{
     background-color: rgb(41, 41, 41);
-    width: 1200px;
-    min-height: 1100px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    
-    
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
 }
 .cabecalho{
     height: 200px;
@@ -15,10 +10,14 @@
     
 }
 .principal{
-    height: 800px;
+    position: relative;
+    height: 100%;
     background-image: url("./img/fundo2.jpg");
     background-repeat:no-repeat;
     background-size: 1120px 800px;
+    margin: 0px;
+    padding: 0px;   
+    height: 794px; 
     
 }
 .pontos_fortes{
@@ -61,30 +60,84 @@
 .principal__info{
     display: inline-block;
     text-align: justify;
-    width: 400px;
-    height: 794px;
+    width: 49%;
     position: relative;
-    margin-right: 20px;
-    margin-left: 50px;
+    margin: 2px;
+    padding: 0px;
     
 }
 .principal__formulario{
     display: inline-block;
     background-color:#ff5800;
-    width: 485px;
-    height: 794px;
+    width: 50%;
     text-align: justify;
-    color: azure;
-    border-color: black;
-    border-style: double;
     position: relative;
-    margin-left: 210px;    
+    margin: 0px;
+    padding: 0px;
+    height: 794px; 
 }
+
+.formulario__grupo{
+    margin: 3px;
+    padding: 1px;
+}
+
+.formulario__label{
+    display:block;
+    clear:left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #FFF7F5;
+    margin: 5px;
+    padding: 1px;
+}
+
+.formulario__label_check{
+    display:inline-block;
+    clear:left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #FFF7F5
+}
+
+.formulario__texto{
+    display:block;
+    clear:left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    width: 98%;
+    height: 20px;
+    margin: 5px;
+    padding: 1px;
+    border-width: 1px ;
+}
+
+.formulario__button{
+    margin: 5px;
+    padding: 1px;  
+}
+
+.formulario__button_item{
+    width: 100px;
+    height: 25px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+    background-color: #00206B;
+    border:1px;
+}
+
 .formulario__enunciado {
     text-align: justify;
     color: azure; 
 }
-.pontos_fortes_link1{
+
+.pontos_fortes{
+width: 100%;
+display: inline-block;
+}
+
+.pontos_fortes_link{
     display: inline-block;
     width: 200px;
     right: 10px;
@@ -92,20 +145,10 @@
     border-style: double;
     margin:10px;
 }
-.pontos_fortes_link2{
-    display: inline-block;
-    width: 200px;
-    right: 40px;
-}
-.pontos_fortes_link3{
-    display: inline-block;
-    width: 200px;
-    right: 40px;
-}
+
 .pontos_fortes_icone{
     width: 60px;
-    right: 60px;
-    margin-right: 100px;
+    height: 60px;
 }
 h4{
     color: #ff5800;
@@ -121,6 +164,12 @@ h4{
 h2{
     color: #ff5800;
 }
+
+.newsletter{
+    width: 100%;
+    display: inline-block;
+}
+
 .rodape{
     height: 60px;
     background-color: rgb(0, 0, 0);
