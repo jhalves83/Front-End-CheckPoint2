@@ -35,13 +35,14 @@
 
     <!--CSS-->
     <link rel="stylesheet" href="./style.css" type="text/css">
+
+    <!-- Boostrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
 </head>
 
-<body class="corpo">
-    <header class="cabecalho">
-        <figure class="principal__figure">
-            <img class="cabecalho__img" src="./img/logo.png" alt="Logo do grupo 6 viagens">
-        </figure>
+<body>
+    <header class="linha cabecalho">
+        <img class="cabecalho__img" src="./img/logo.png" alt="Logo do grupo 6 viagens">
         <nav class="cabecalho__nav">
             <a class="cabecalho__link" href="../pages/pagina1.html" target="_blank">Pagina 1</a>
             <a class="cabecalho__link" href="../pages/pagina2.html" target="_blank">Pagina 2</a>
@@ -49,27 +50,34 @@
             <a class="cabecalho__link" href="../pages/pagina4.html" target="_blank">Pagina 4</a>
         </nav>
         <div class="cabecalho__redesSociais">
-            <a href="https://www.facebook.com" target="_blank"><img class="cabecalho__redesSociais__img" src="./img/face.png"></a>
-            <a href="https://www.instagram.com" target="_blank"><img class="cabecalho__redesSociais__img"
-                    src="./img/instapng.png"></a>
-            <a href="https://twitter.com" target="_blank"><img class="cabecalho__redesSociais__img"
-                    src="./img/twitterpng.png"></a>
-            <a href="https://www.youtube.com" target="_blank"><img class="cabecalho__redesSociais__img"
-                    src="./img/youtube.png"></a>
+            <a href="https://www.facebook.com" class="cabecalho__redesSociais__icon" target="_blank">
+                <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com" class="cabecalho__redesSociais__icon"n target="_blank">
+                <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://twitter.com" class="cabecalho__redesSociais__icon" target="_blank">
+                <i class="bi bi-twitter"></i>
+            </a>
+            <a href="https://www.youtube.com" class="cabecalho__redesSociais__icon" target="_blank">
+                <i class="bi bi-youtube"></i>
+            </a>
         </div>
     </header>
-
-    <main class="principal">
-        <section class="chamadaPrincipal">
-            <h1 class="chamadaPrincipal__titulo">
-                Debitis mollitia et aliquid error aut dolorem ipsam.
-            </h1>
-            <p class="chamadaPrincipal__paragrafo">
-                Lorem ipsum dolor sit amet.
-                Est modi quibusdam ex labore recusandae qui fugit omnis ut repudiandae doloribus ut
-                vero doloribus ut doloremque fugiat! Sed dolorem quia rem blanditiis eius ut deleniti earum est
-                excepturi iste.
-            </p>
+    <main class="linha principal">
+        <section class="linha chamadaPrincipal">
+            <div class="chamadaPrincipal__conteudo">
+                <h1 class="chamadaPrincipal__titulo">
+                    Debitis mollitia et aliquid error aut dolorem ipsam.
+                </h1>
+                <p class="chamadaPrincipal__paragrafo">
+                    Lorem ipsum dolor sit amet.
+                    Est modi quibusdam ex labore recusandae qui fugit omnis ut repudiandae doloribus ut
+                    vero doloribus ut doloremque fugiat! Sed dolorem quia rem blanditiis eius ut deleniti earum est
+                    excepturi iste.
+                </p>
+            </div>
+            <div class="chamadaPrincipal__fundo"></div>
         </section>
         <section class="cadastro">
             <h1 class="cadastro__titulo">
@@ -136,58 +144,62 @@
         </section>
     </main>
     <section class="pontosTuristicos">
-        <h1 class="pontosTuristicos__titulo">Principais Pontos Turísticos</h1>
-        <article class="pontosTuristicos__article">
-            <a class="pontosTuristicos__link" href="../pages/pagina2.html" target="_blank">
-                <img class="pontosTuristicos__img" src="./img/icone_rodape.png">
-            </a>
-            <h2 class="pontosTuristicos__titulo">Ponto Turístico 1</h2>
-            <p class="pontosTuristicos__paragrafo">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque sem sit amet massa convallis
-                euismod.
-            </p>
-        </article>
-        <article class="pontosTuristicos__article">
-            <a class="pontosTuristicos__link" href="../pages/pagina2.html" target="_blank">
-                <img class="pontosTuristicos__img" src="./img/icone_rodape.png">
-            </a>
-            <h2 class="pontosTuristicos__titulo">Ponto Turístico 2</h2>
-            <p class="pontosTuristicos__paragrafo">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque sem sit amet massa convallis
-                euismod.
-            </p>
-        </article>
-        <article class="pontosTuristicos__article">
-            <a class="pontosTuristicos__link" href="../pages/pagina2.html" target="_blank">
-                <img class="pontosTuristicos__img" src="./img/icone_rodape.png">
-            </a>
-            <h2 class="pontosTuristicos__titulo">Ponto Turístico 3</h2>
-            <p class="pontosTuristicos__paragrafo">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque sem sit amet massa convallis
-                euismod.
-            </p>
-        </article>
+        <h1 class="sectionTitulo pontosTuristicos__titulo">Principais Pontos Turísticos</h1>
+        <div class='linha'>
+            <article class="pontosTuristicos__article">
+                <a class="pontosTuristicos__link" href="../pages/pagina2.html" target="_blank">
+                    <img class="pontosTuristicos__img" src="./img/icone_rodape.png">
+                </a>
+                <h2 class="pontosTuristicos__itemsTitulo">Ponto Turístico 1</h2>
+                <p class="pontosTuristicos__paragrafo">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque sem sit amet massa convallis
+                    euismod.
+                </p>
+            </article>
+            <article class="pontosTuristicos__article">
+                <a class="pontosTuristicos__link" href="../pages/pagina2.html" target="_blank">
+                    <img class="pontosTuristicos__img" src="./img/icone_rodape.png">
+                </a>
+                <h2 class="pontosTuristicos__itemsTitulo">Ponto Turístico 2</h2>
+                <p class="pontosTuristicos__paragrafo">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque sem sit amet massa convallis
+                    euismod.
+                </p>
+            </article>
+            <article class="pontosTuristicos__article">
+                <a class="pontosTuristicos__link" href="../pages/pagina2.html" target="_blank">
+                    <img class="pontosTuristicos__img" src="./img/icone_rodape.png">
+                </a>
+                <h2 class="pontosTuristicos__itemsTitulo">Ponto Turístico 3</h2>
+                <p class="pontosTuristicos__paragrafo">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque sem sit amet massa convallis
+                    euismod.
+                </p>
+            </article>
+        </div>
     </section>
-    <section class="newsletter">
-        <h1 class="newsletter__titulo">Assine Nossa Newsletter :)</h1 class="titulo">
-        <p class="newsletter__paragrafo">
-            Lorem ipsum dolor sit amet. Ea provident dicta qui iusto quasi a dicta dicta sed voluptatem minima.
-            In quam sint ut dolores ducimus sunt dolorem.
-        </p>
-        <form class="newsletter__formulario" action="">
-            <div class="formulario__itens">
-                <label class="formulario__label" for="nome">Nome</label>
-                <input class="formulario__input" type="text" maxlength="100" id="nome" name="nome"
-                    placeholder="Seu nome completo">
-            </div>
-            <div class="formulario__itens">
-                <label class="formulario__label" for="email">E-mail</label>
-                <input class="formulario__input" type="email" id="email" name="email"
-                    placeholder="Digite seu melhor email">
-            </div>
-        </form>
+    <section class="linha newsletter">
+        <div class='newsletter__conteudo'>
+            <h1 class="sectionTitulo newsletter__titulo">Assine Nossa Newsletter :)</h1>
+            <p class="newsletter__paragrafo">
+                Lorem ipsum dolor sit amet. Ea provident dicta qui iusto quasi a dicta dicta sed voluptatem minima.
+                In quam sint ut dolores ducimus sunt dolorem.
+            </p>
+            <form class="newsletter__formulario" action="">
+                <div class="formulario__itens">
+                    <label class="formulario__label" for="nome">Nome</label>
+                    <input class="formulario__input" type="text" maxlength="100" id="nome" name="nome"
+                        placeholder="Seu nome completo">
+                </div>
+                <div class="formulario__itens">
+                    <label class="formulario__label" for="email">E-mail</label>
+                    <input class="formulario__input" type="email" id="email" name="email"
+                        placeholder="Digite seu melhor email">
+                </div>
+            </form>
+        </div>
     </section>
-    <footer class="rodape">
+    <footer class="linha rodape">
         <p class="rodape__paragrafo">Todos os direitos reservados - Nome da Empresa</p>
         <p class="rodape__paragrafo">Av. Lorem Ipsum, silor domor xyz - Estado XY</p>
     </footer>

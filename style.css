@@ -1,105 +1,128 @@
-/*CORPO*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-.corpo {
-    background-color: rgb(41, 41, 41);
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box; 
+/*CORPO*/ 
+
+html, body {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /*CABEÇALHO*/
 
+.linha {
+    display: flex;
+    flex-direction: row;
+}
+
 .cabecalho {
-    height: 200px;
-    width: 100%; 
+    background-color: #fff;
+    height: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: space-between;
 }
 
 .cabecalho__img {
-    width: 200px;
-    float: left;
+    height: 75%;
 }
 
 .cabecalho__link {
+    color: #ff5800;
+    font-weight: 700;
     text-decoration: none;
-    float: left;
-    font-size: 30px;
-    margin-top: 60px;
+    text-transform: uppercase;
     margin-left: 40px;
-    border: solid;
-    border-radius: 2px;
-    border-color: black;
-    color: #ff5800; 
+    margin-right: 40px;
 }
 
 .cabecalho__redesSociais {
-    float: right;
-    margin-right: 30px;
+    font-size: 1.5rem;
+    display: flex;
+    gap: 15px;
 }
 
-.cabecalho__redesSociais__img {
-    width: 40px;
-    right: 40px;
-    margin-left: 5px;
-    margin-top: 60px;
+.cabecalho__redesSociais__icon {
+    color: #000;
+    text-decoration: none;
 }
 
 /*CONTEÚDO PRINCIPAL*/
 
-.principal {
+ .principal {
     width: 100%;
-    height: 600px;
+    height: 80vh;
+    align-items: unset;
 }
 
 .chamadaPrincipal {
-    float: left;
-    text-align: justify;
-    width: calc(100% - 480px);
-    height: inherit;
-    padding: 20px;
-    background-image: url("./img/fundo2.jpg");
-    background-repeat: no-repeat;
-    background-size: cover; 
-	background-position: center center;
+    background-color: #fff;
+    position: relative;
+}
+
+.chamadaPrincipal__conteudo {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 1;
 }
 
 .chamadaPrincipal__titulo {
+    font-size: 3rem;
     color: #ff5800;
-} 
+}
+
+.chamadaPrincipal__paragrafo {
+    font-size: 1.2rem;
+    line-height: 2;
+}
+
+.chamadaPrincipal__fundo {
+    background-image: url("./img/fundo2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    position: absolute;
+}
 
 .cadastro {
-    float: right;
     background-color: #ff5800;
-    width: 400px;
-    height: inherit;
-    text-align: justify;
+    color: #fff;
     padding: 20px;
 }
 
 .cadastro__titulo {
-    font-family: cursive;
+    font-size: 1.5rem;
+}
+
+/*
+
+.cadastro__formulario {
+    width: 100%;
 }
 
 .formulario__itens .formulario__label {
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
-    color: #FFF7F5;
     margin: 5px;
 }
 
 .formulario__radios .formulario__label, .formulario__checkbox .formulario__label {
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
-    color: #FFF7F5
 }
 
 .formulario__input {
-    display: block;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     width: 98%;
     height: 20px;
     margin: 5px;
-    padding: 1px;
+    padding: 10px;
     border-width: 1px ;
     outline: none;
 }
@@ -113,7 +136,6 @@
     width: 100px;
     height: 25px;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
     color: #FFFFFF;
     background-color: #00206B;
     border: 1px;
@@ -122,61 +144,54 @@
 
 .formulario__button button:hover {
     color: chocolate;
-}
+} */
 
 /*CONTEÚDO ADICIONAL*/
-
-.pontosTuristicos {
-	width: calc(100% - 60px);
-	display: inline-block;
-	background-color: rgba(0, 0, 0, 0.3);
-	padding: 30px;
-	text-align: center;
+.sectionTitulo {
+    font-size: 2rem;
 }
 
-.pontosTuristicos__article {
-	width: 33.33%;
-	float: left;
+.pontosTuristicos {
+	background-color: rgba(0, 0, 0, .9);
+    color: #fff;
+	padding: 30px;
+	text-align: center;
 }
 
 .pontosTuristicos__titulo {
     color: #ff5800;
 }
 
-.pontosTuristicos__paragrafo {
-	width: 90%;
-	text-align: justify;
+.pontosTuristicos__itemsTitulo {
+    color: #ff5800;
 }
 
 .pontosTuristicos__img{
-    width: 60px;
     height: 60px;
 }
 
+
 .newsletter{
-    width: calc(100% - 60px);
-    display: inline-block;
-    background-color: #ff5800;
-    padding: 30px;
+    background-color: rgba(0, 0, 0, .1);
+    color: rgba(0, 0, 0, .9);
+    height: 30vh;
+    text-align: center;
+}
+
+.newsletter__conteudo {
+    
 }
 
 /*RODAPÉ*/
 
 .rodape {
-    display: inline-block;
-	width: calc(100% - 20px);
-	border-top: 2px solid #888888;
-	margin-top: 30px;
+	background-color: rgba(0, 0, 0, 0.9);
+    color: white;
 	padding: 10px;
-	background-color: rgba(0, 0, 0, 0.5);
 	text-align: center;
 }
 
-.rodape__paragrafo {
-    font-family: cursive;
-    color: white;
-}
-
+/* 
 @media screen and (max-width: 1024px) {
 	.chamadaPrincipal {
 		width: 80%;
@@ -209,4 +224,4 @@
 		display: block;
 		margin: 0 auto;
 	}
-}
+} */
