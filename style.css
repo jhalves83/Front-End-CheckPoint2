@@ -10,11 +10,19 @@ html, body {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
+    line-height: 1.5;
+}
+
+h1 {
+    margin: 0;
 }
 
 .linha {
     display: flex;
     flex-direction: row;
+}
+
+.linha__centro {
     align-items: center;
 }
 
@@ -23,13 +31,12 @@ html, body {
 .cabecalho {
     background-color: #fff;
     height: 100px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 20px;
     justify-content: space-between;
 }
 
 .cabecalho__logo {
-    height: 75%;
+    height: 100%;
 }
 
 .cabecalho__link {
@@ -57,7 +64,6 @@ html, body {
 .principal {
     width: 100%;
     min-height: 80vh;
-    align-items: unset;
 }
 
 .chamadaPrincipal {
@@ -66,6 +72,7 @@ html, body {
 }
 
 .chamadaPrincipal__conteudo {
+    padding: 100px 20px;
     width: 70%;
     margin: auto;
     position: relative;
@@ -120,15 +127,19 @@ html, body {
 }
 
 .formulario__input {
+    background-color: #fff;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-    font-size: 14px;
+    font-size: 0.9rem;
     color: #ff5800;
     border: 0;
     border-radius: 5px;
-    width: 100%;
     margin-top: 5px;
     margin-bottom: 5px;
     padding: 15px;
+}
+
+.formulario__inputLargo {
+    width: 100%;
 }
 
 
@@ -160,40 +171,64 @@ html, body {
     background-color:white;
 }
 
-.formulario__button {
-    margin: 10px 0;
+.button__grupo {
+    margin: 20px 0;
     display: flex;
     gap: 10px;
 }
 
-.formulario__button button {
-    background-color: #00206B;
-    color: #FFFFFF;
-    width: 50%;
+.formulario__button {
+    color: #fff;
     border: 0;
     border-radius: 5px;
-    padding: 10px;
+    padding: 15px 50px;
     cursor: pointer;
+    transition: 0.2s;
 }
 
-.formulario__button button:hover {
+.formulario__button:hover {
     color: chocolate;
+}
+
+.button__azul {
+    background-color: #00206B;
+}
+
+.button__transparente {
+    background-color: transparent;
+    border: 3px solid #fff;
+}
+
+.button__transparente:hover {
+    background-color: #fff;
 }
 
 /*CONTEÚDO ADICIONAL*/
 .sectionTitulo {
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 .pontosTuristicos {
 	background-color: rgba(0, 0, 0, .9);
     color: #fff;
 	padding: 30px;
-	text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.pontosTuristicos__article {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 33.33%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
 .pontosTuristicos__titulo {
     color: #ff5800;
+    text-align: center;
+    margin-bottom: 50px;
 }
 
 .pontosTuristicos__itemsTitulo {
@@ -201,19 +236,21 @@ html, body {
 }
 
 .pontosTuristicos__img{
-    height: 60px;
+    border-radius: 100%;
+    height: 150px;
+    width: 150px;
 }
-
 
 .newsletter{
     background-color: rgba(0, 0, 0, .1);
     color: rgba(0, 0, 0, .9);
-    height: 30vh;
     text-align: center;
+    min-height: 40vh;
+    padding: 100px 20px;
 }
 
 .newsletter__conteudo {
-    
+    margin: auto;
 }
 
 /*RODAPÉ*/
@@ -225,37 +262,31 @@ html, body {
 	text-align: center;
 }
 
-/* 
+
 @media screen and (max-width: 1024px) {
-	.chamadaPrincipal {
-		width: 80%;
-		float: none;
-		display: block;
-		margin-top: 0px; 
-		margin-bottom: 60px;
-		margin-left: auto;
-		margin-right: auto;
+
+	.linha {
+		flex-direction: column;
 	}
 
-	.cadastro {
-		width: 80%;
-		max-width: 400px;
-		float: none;
-		display: block;
-		margin: 0 auto;
-	}
+    .cabecalho {
+        height: 300px;
+    }
 
-	.pontosTuristicos {
-		width: 100%;
-		float: none;
-		display: inline-block;
-	}
+    .cabecalho__logo {
+        height: 100px;
+    }
 
-	.newsletter  {
-		width: 80%;
-		max-width: 300px;
-		float: none;
-		display: block;
-		margin: 0 auto;
-	}
-} */
+    .cabecalho__nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .chamadaPrincipal__conteudo {
+        width: 100%;
+    }
+
+    .pontosTuristicos__article{
+        width: 100%;
+    }
+}

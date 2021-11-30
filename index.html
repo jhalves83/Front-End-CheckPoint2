@@ -41,7 +41,7 @@
 </head>
 
 <body>
-    <header class="linha cabecalho">
+    <header class="linha linha__centro cabecalho">
         <img class="cabecalho__logo" src="./img/logo.png" alt="Logo do grupo 6 viagens">
         <nav class="cabecalho__nav">
             <a class="cabecalho__link" href="../pages/pagina1.html" target="_blank">Pagina 1</a>
@@ -86,22 +86,22 @@
             <form class="cadastro__formulario" action="" method="get">
                 <div class="formulario__itens">
                     <label class="label__oculta" for="nome">Nome</label>
-                    <input class="formulario__input" type="text" maxlength="100" id="nome" name="nome"
+                    <input class="formulario__input formulario__inputLargo" type="text" maxlength="100" id="nome" name="nome"
                         placeholder="Seu nome completo">
                 </div>
                 <div class="formulario__itens">
                     <label class="label__oculta" for="email">E-mail</label>
-                    <input class="formulario__input" type="email" id="email" name="email"
+                    <input class="formulario__input formulario__inputLargo" type="email" id="email" name="email"
                         placeholder="Digite seu melhor email">
                 </div>
                 <div class="formulario__itens">
                     <label class="label__oculta" for="telefone">Telefone</label>
-                    <input class="formulario__input" type="tel" id="telefone" name="telefone"
+                    <input class="formulario__input formulario__inputLargo" type="tel" id="telefone" name="telefone"
                         placeholder="Informe seu telefone">
                 </div>
                 <div class="formulario__itens">
                     <label class="label__oculta" for="dataNascimento">Data de Nascimento</label>
-                    <input class="formulario__input" type="date" id="dataNascimento" name="dataNascimento">
+                    <input class="formulario__input formulario__inputLargo" type="date" id="dataNascimento" name="dataNascimento">
                 </div>
                 <div class="formulario__itens">
                     <p class="formulario__label">Você é maior de idade?</p>
@@ -114,7 +114,7 @@
                 </div>
                 <div class="formulario__itens formulario__select">
                     <label class="label__oculta" for="pontoTuristico">Selecione um ponto turístico na cidade</label>
-                    <select id="pontoTuristico" name="pontoTuristico" class="formulario__input">
+                    <select id="pontoTuristico" name="pontoTuristico" class="formulario__input formulario__inputLargo">
                         <option selected disabled>Selecione um ponto turístico na cidade</option>
                         <option value="opcao1">Opção 1</option>
                         <option value="opcao2">Opção 2</option>
@@ -136,9 +136,9 @@
                         <label class="formulario__label_radiocheck" for="estudante">Estudante</label>
                     </div>
                 </div>
-                <div class="formulario__button">
-                    <button type="submit">Enviar</button>
-                    <button type="reset">Limpar</button>
+                <div class="button__grupo">
+                    <button class="formulario__button button__azul" type="submit">Enviar</button>
+                    <button class="formulario__button button__transparente" type="reset">Limpar</button>
                 </div>
             </form>
         </section>
@@ -147,55 +147,63 @@
         <h1 class="sectionTitulo pontosTuristicos__titulo">Principais Pontos Turísticos</h1>
         <div class='linha'>
             <article class="pontosTuristicos__article">
-                <a class="pontosTuristicos__link" href="../pages/pagina2.html" target="_blank">
-                    <img class="pontosTuristicos__img" src="./img/icone_rodape.png">
-                </a>
-                <h2 class="pontosTuristicos__itemsTitulo">Ponto Turístico 1</h2>
-                <p class="pontosTuristicos__paragrafo">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque sem sit amet massa convallis
-                    euismod.
-                </p>
+                <div>
+                    <a class="pontosTuristicos__link" href="../pages/pagina2.html" target="_blank">
+                        <img class="pontosTuristicos__img" src="./imagens/Ilha Anchieta (4).jpg">
+                    </a>
+                </div>
+                <div>
+                    <h2 class="pontosTuristicos__itemsTitulo">Ilha Anchieta</h2>
+                    <p class="pontosTuristicos__paragrafo">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque sem sit amet massa convallis
+                        euismod.
+                    </p>
+                </div>
             </article>
             <article class="pontosTuristicos__article">
-                <a class="pontosTuristicos__link" href="../pages/pagina2.html" target="_blank">
-                    <img class="pontosTuristicos__img" src="./img/icone_rodape.png">
-                </a>
-                <h2 class="pontosTuristicos__itemsTitulo">Ponto Turístico 2</h2>
-                <p class="pontosTuristicos__paragrafo">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque sem sit amet massa convallis
-                    euismod.
-                </p>
+                <div>
+                    <a class="pontosTuristicos__link" href="../pages/pagina2.html" target="_blank">
+                        <img class="pontosTuristicos__img" src="./imagens/Ilha Anchieta - Praia do Porto (2).jpg">
+                    </a>
+                </div>
+                <div>
+                    <h2 class="pontosTuristicos__itemsTitulo">Praia do Porto</h2>
+                    <p class="pontosTuristicos__paragrafo">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque sem sit amet massa convallis
+                        euismod.
+                    </p>
+                </div>
             </article>
             <article class="pontosTuristicos__article">
-                <a class="pontosTuristicos__link" href="../pages/pagina2.html" target="_blank">
-                    <img class="pontosTuristicos__img" src="./img/icone_rodape.png">
-                </a>
-                <h2 class="pontosTuristicos__itemsTitulo">Ponto Turístico 3</h2>
-                <p class="pontosTuristicos__paragrafo">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque sem sit amet massa convallis
-                    euismod.
-                </p>
+                <div>
+                    <a class="pontosTuristicos__link" href="../pages/pagina2.html" target="_blank">
+                        <img class="pontosTuristicos__img" src="./imagens/Ilha da Selina - Menor praia do mundo.jpg">
+                    </a>
+                </div>
+                <div>
+                    <h2 class="pontosTuristicos__itemsTitulo">Ilha da Selina</h2>
+                    <p class="pontosTuristicos__paragrafo">
+                       A Ilha da Selina tem a menor praia do mundo inteiro!
+                    </p>
+                </div>
             </article>
         </div>
     </section>
     <section class="linha newsletter">
         <div class='newsletter__conteudo'>
-            <h1 class="sectionTitulo newsletter__titulo">Assine Nossa Newsletter :)</h1>
+            <h1 class="sectionTitulo">Assine Nossa Newsletter :)</h1>
             <p class="newsletter__paragrafo">
                 Lorem ipsum dolor sit amet. Ea provident dicta qui iusto quasi a dicta dicta sed voluptatem minima.
                 In quam sint ut dolores ducimus sunt dolorem.
             </p>
             <form class="newsletter__formulario" action="">
-                <div class="formulario__itens">
-                    <label class="formulario__label" for="nome">Nome</label>
-                    <input class="formulario__input" type="text" maxlength="100" id="nome" name="nome"
-                        placeholder="Seu nome completo">
-                </div>
-                <div class="formulario__itens">
-                    <label class="formulario__label" for="email">E-mail</label>
-                    <input class="formulario__input" type="email" id="email" name="email"
-                        placeholder="Digite seu melhor email">
-                </div>
+                <label class="label__oculta" for="newsletterNome">Nome</label>
+                <input class="formulario__input" type="text" maxlength="100" id="newsletterNome" name="newsletterNome"
+                placeholder="Seu nome completo">
+                <label class="label__oculta" for="newsletterEmail">E-mail</label>
+                <input class="formulario__input" type="newsletterEmail" id="newsletterEmail" name="newsletterEmail"
+                placeholder="Digite seu melhor email">
+                <button class='formulario__button button__azul' type="submit">Enviar</button>
             </form>
         </div>
     </section>
