@@ -1,20 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
 
-/*CORPO*/ 
+/* GLOBAL */ 
+
+* { 
+    box-sizing: border-box;
+}
 
 html, body {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
-
-/*CABEÇALHO*/
 
 .linha {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
+
+/*CABEÇALHO*/
 
 .cabecalho {
     background-color: #fff;
@@ -24,7 +28,7 @@ html, body {
     justify-content: space-between;
 }
 
-.cabecalho__img {
+.cabecalho__logo {
     height: 75%;
 }
 
@@ -43,16 +47,16 @@ html, body {
     gap: 15px;
 }
 
-.cabecalho__redesSociais__icon {
+.redesSociais__icone {
     color: #000;
     text-decoration: none;
 }
 
 /*CONTEÚDO PRINCIPAL*/
 
- .principal {
+.principal {
     width: 100%;
-    height: 80vh;
+    min-height: 80vh;
     align-items: unset;
 }
 
@@ -62,9 +66,8 @@ html, body {
 }
 
 .chamadaPrincipal__conteudo {
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 70%;
+    margin: auto;
     position: relative;
     z-index: 1;
 }
@@ -102,49 +105,80 @@ html, body {
     font-size: 1.5rem;
 }
 
-/*
-
-.cadastro__formulario {
-    width: 100%;
+.label__oculta {
+    opacity: 0;
 }
 
-.formulario__itens .formulario__label {
-    font-size: 14px;
-    margin: 5px;
+.formulario__label {
+    font-weight: 600;
 }
 
-.formulario__radios .formulario__label, .formulario__checkbox .formulario__label {
-    font-size: 14px;
+.formulario__label_radiocheck {
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
 }
 
 .formulario__input {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-size: 14px;
-    width: 98%;
-    height: 20px;
-    margin: 5px;
-    padding: 10px;
-    border-width: 1px ;
-    outline: none;
+    color: #ff5800;
+    border: 0;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 15px;
+}
+
+
+::placeholder {
+    color: #ff5800;
+}
+
+.formulario__radio, .formulario__checkbox {
+    appearance: none;
+    border: 3px solid #fff;
+    margin-right: 10px;
+    padding: 8px;
+}
+
+.formulario__radio{
+    border-radius: 100%;
+    vertical-align: text-bottom;
+}
+
+.formulario__radio:checked {
+    background-color:white;
+}
+.formulario__checkbox {
+    border-radius: 5px;
+    vertical-align: middle;
+}
+
+.formulario__checkbox:checked {
+    background-color:white;
 }
 
 .formulario__button {
-    margin: 5px;
-    padding: 1px;  
+    margin: 10px 0;
+    display: flex;
+    gap: 10px;
 }
 
 .formulario__button button {
-    width: 100px;
-    height: 25px;
-    text-align: center;
-    color: #FFFFFF;
     background-color: #00206B;
-    border: 1px;
+    color: #FFFFFF;
+    width: 50%;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
     cursor: pointer;
 }
 
 .formulario__button button:hover {
     color: chocolate;
-} */
+}
 
 /*CONTEÚDO ADICIONAL*/
 .sectionTitulo {
