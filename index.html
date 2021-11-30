@@ -2,15 +2,17 @@
 <html lang="pt-br">
 
 <head>
+    <!--Configurações do documento-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!--SEO-->
     <title>Grupo 6 Viagens</title>
-    <meta name="description" content="Descrição da página">
+    <meta name="description" content="Conheça o Brasil com o Grupo 6 Viagens e tenha momentos inesquecíveis">
+    <meta name="keywords" content="Brasil, Férias, Viagens">
     <meta name="robots" content="noindex, noimageindex">
     <meta http-equiv="content-language" content="pt-br">
-
     <meta name="author" content="Fábio Perez">
     <meta name="author" content="Fredson Junior">
     <meta name="author" content="Hugo Almeida">
@@ -19,155 +21,175 @@
     <meta name="author" content="Raphael Dutra">
     <meta name="author" content="Thalles Cabral">
 
-    <link rel="shortcut icon" href="./img/grupo_6_viagens_favicon.ico">
-    <link href="./style.css" rel="stylesheet">
-
+    <!--Opengraph-->
     <meta property="og:locale" content="pt_BR">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Grupo 6 Viagens">
-    <meta property="og:description"
-        content="Site com formulário para Checkpoint 2 da disciplina Front-End I do Curso Certified Tech Developer da Digital House">
+    <meta property="og:description" content="Conheça o Brasil com o Grupo 6 Viagens e tenha momentos inesquecíveis">
     <meta property="og:url" content="ATENÇÃO!!! AQUI COLOCAR O LINK DO GIT PAGES">
     <meta property="og:site_name" content="Grupo 6 Viagens">
     <meta property="og:image" content="./img/logo.png">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./img/grupo_6_viagens_favicon.ico">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="./style.css" type="text/css">
 </head>
 
 <body class="corpo">
     <header class="cabecalho">
-        <img class="cabecalho__logo" src="./img/logo.png">
-        <nav class="cabecalho_links">
-            <a class=link href="../pages/pagina1.html">Pagina 1</a>
-            <a class=link href="../pages/pagina2.html">Pagina 2</a>
-            <a class=link href="../pages/pagina3.html">Pagina 3</a>
-            <a class=link href="../pages/pagina4.html">Pagina 4</a>
+        <figure class="principal__figure">
+            <img class="cabecalho__img" src="./img/logo.png" alt="Logo do grupo 6 viagens">
+        </figure>
+        <nav class="cabecalho__nav">
+            <a class="cabecalho__link" href="../pages/pagina1.html" target="_blank">Pagina 1</a>
+            <a class="cabecalho__link" href="../pages/pagina2.html" target="_blank">Pagina 2</a>
+            <a class="cabecalho__link" href="../pages/pagina3.html" target="_blank">Pagina 3</a>
+            <a class="cabecalho__link" href="../pages/pagina4.html" target="_blank">Pagina 4</a>
         </nav>
-        <div class="cabecalho_redes_sociais">
-            <a href=""><img class="redes_sociais_logo" src="./img/face.png"></a>
-            <a href=""><img class="redes_sociais_logo" src="./img/instapng.png"></a>
-            <a href=""><img class="redes_sociais_logo" src="./img/twitterpng.png"></a>
-            <a href=""><img class="redes_sociais_logo" src="./img/youtube.png"></a>
+        <div class="cabecalho__redesSociais">
+            <a href="https://www.facebook.com" target="_blank"><img class="cabecalho__redesSociais__img" src="./img/face.png"></a>
+            <a href="https://www.instagram.com" target="_blank"><img class="cabecalho__redesSociais__img"
+                    src="./img/instapng.png"></a>
+            <a href="https://twitter.com" target="_blank"><img class="cabecalho__redesSociais__img"
+                    src="./img/twitterpng.png"></a>
+            <a href="https://www.youtube.com" target="_blank"><img class="cabecalho__redesSociais__img"
+                    src="./img/youtube.png"></a>
         </div>
     </header>
-    <!-- <img class = "fundo_corpo" src= "./img/fundo2.jpg">-->
+
     <main class="principal">
-        <section class="principal__info">
-            <article>
-                <h1 class="titulo">
-                    Debitis mollitia et aliquid error aut dolorem ipsam.
-                </h1 class="titulo">
-                <p>
-                    Lorem ipsum dolor sit amet.
-                    Est modi quibusdam ex labore recusandae qui fugit omnis ut repudiandae doloribus ut
-                    vero doloribus ut doloremque fugiat! Sed dolorem quia rem blanditiis eius ut deleniti earum est
-                    excepturi iste.
-                </p>
-            </article>
-        </section>
-        <aside class="principal__formulario">
-            <p>
+        <section class="chamadaPrincipal">
+            <h1 class="chamadaPrincipal__titulo">
+                Debitis mollitia et aliquid error aut dolorem ipsam.
+            </h1>
+            <p class="chamadaPrincipal__paragrafo">
                 Lorem ipsum dolor sit amet.
                 Est modi quibusdam ex labore recusandae qui fugit omnis ut repudiandae doloribus ut
-                vero doloribus ut doloremque
+                vero doloribus ut doloremque fugiat! Sed dolorem quia rem blanditiis eius ut deleniti earum est
+                excepturi iste.
             </p>
-            <form action="" method="get">
-                <div class="formulario_grupo">
+        </section>
+        <section class="cadastro">
+            <h1 class="cadastro__titulo">
+                Preencha o formulário e inicie a sua jornada
+            </h1>
+            <form class="cadastro__formulario" action="" method="get">
+                <div class="formulario__itens">
                     <label class="formulario__label" for="nome">Nome</label>
-                    <input class="formulario__texto" type="text" id="nome" maxlength="100" name="nome"
+                    <input class="formulario__input" type="text" maxlength="100" id="nome" name="nome"
                         placeholder="Seu nome completo">
                 </div>
-                <div class="formulario_grupo">
+                <div class="formulario__itens">
                     <label class="formulario__label" for="email">E-mail</label>
-                    <input class="formulario__texto" type="email" id="email" name="email"
+                    <input class="formulario__input" type="email" id="email" name="email"
                         placeholder="Digite seu melhor email">
                 </div>
-                <div class="formulario__grupo">
+                <div class="formulario__itens">
                     <label class="formulario__label" for="telefone">Telefone</label>
-                    <input class="formulario__texto" type="tel" id="telefone" name="telefone"
+                    <input class="formulario__input" type="tel" id="telefone" name="telefone"
                         placeholder="Informe seu telefone">
                 </div>
-                <div class="formulario__grupo">
+                <div class="formulario__itens">
                     <label class="formulario__label" for="dataNascimento">Data de Nascimento</label>
-                    <input class="formulario__texto" type="date" id="dataNascimento" name="dataNascimento">
+                    <input class="formulario__input" type="date" id="dataNascimento" name="dataNascimento">
                 </div>
-                <div class="formulario__grupo">
-                    <div class="formulario__radios">
-                        <label class="formulario__label">Você é maior de idade?</label>
-                        <div>
-                            <input type="radio" id="maiorIdade" name="faixaidade" value="sim">
-                            <label class="formulario__label_check" for="sim">Sim</label>
-                            <input type="radio" id="menorIdade" name="faixaidade" value="nao">
-                            <label class="formulario__label_check" for="nao">Não</label>
-                        </div>
+                <div class="formulario__itens formulario__radios">
+                    <p class="formulario__label">Você é maior de idade?</p>
+                    <div>
+                        <input type="radio" id="maiorIdade" name="faixaidade" value="sim">
+                        <label class="formulario__label" for="sim">Sim</label>
+                        <input type="radio" id="menorIdade" name="faixaidade" value="nao">
+                        <label class="formulario__label" for="nao">Não</label>
                     </div>
                 </div>
-                <div class="formulario__grupo">
-                    <div class="formulario__select">
-                        <label class="formulario__label">Ponto interessante na cidade</label>
-                        <select name="select" class="formulario__texto">
-                            <option selected disabled>Selecione</option>
-                            <option value="opcao1">Opção 1</option>
-                            <option value="opcao2">Opção 2</option>
-                            <option value="opcao3">Opção 3</option>
-                        </select>
-                    </div>
+                <div class="formulario__itens formulario__select">
+                    <p class="formulario__label">Selecione um ponto turístico na cidade</p>
+                    <select name="select" class="formulario__input">
+                        <option selected disabled>Selecione</option>
+                        <option value="opcao1">Opção 1</option>
+                        <option value="opcao2">Opção 2</option>
+                        <option value="opcao3">Opção 3</option>
+                    </select>
                 </div>
-                <div class="formulario__grupo">
-                <div>
-                    <label class="formulario__label">Qual o(s) seu(s) interesse(s) na cidade?</label>
+                <div class="formulario__itens formulario__checkbox">
+                    <p class="formulario__label">Selecione seu(s) interesse(s) na cidade</p>
                     <div>
                         <input type="checkbox" id="turista" name="turista" value="turista">
-                        <label class="formulario__label_check" for="turista">Turista</label>
+                        <label class="formulario__label" for="turista">Turista</label>
                     </div>
                     <div>
                         <input type="checkbox" id="residente" name="residente" value="residente">
-                        <label class="formulario__label_check" for="residente">Residente</label>
+                        <label class="formulario__label" for="residente">Residente</label>
                     </div>
                     <div>
                         <input type="checkbox" id="estudante" name="estudante" value="estudante">
-                        <label class="formulario__label_check" for="estudante">Estudante</label>
+                        <label class="formulario__label" for="estudante">Estudante</label>
                     </div>
                 </div>
-            </div>
                 <div class="formulario__button">
-                    <button type="reset" class="formulario__button_item">Limpar</button>
-                    <button type="submit" class="formulario__button_item">Enviar</button>
+                    <button type="reset">Limpar</button>
+                    <button type="submit">Enviar</button>
                 </div>
             </form>
-        </aside>
+        </section>
     </main>
-    <section class="pontos_fortes">
-        <article class="pontos_fortes_link">
-            <h4>Lorem ipsum dolor.</h4>
-            <img class="pontos_fortes_icone" src="./img/icone_rodape.png">
-            <a class="pontos_fortes_link" href="../pages/pagina2.html">Ea magni nemo et nobis maiores id neque alias ut
-                enim quasi qui harum</a>
+    <section class="pontosTuristicos">
+        <h1 class="pontosTuristicos__titulo">Principais Pontos Turísticos</h1>
+        <article class="pontosTuristicos__article">
+            <a class="pontosTuristicos__link" href="../pages/pagina2.html" target="_blank">
+                <img class="pontosTuristicos__img" src="./img/icone_rodape.png">
+            </a>
+            <h2 class="pontosTuristicos__titulo">Ponto Turístico 1</h2>
+            <p class="pontosTuristicos__paragrafo">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque sem sit amet massa convallis
+                euismod.
+            </p>
         </article>
-        <article class="pontos_fortes_link">
-            <img class="pontos_fortes_icone" src="./img/icone_rodape.png">
-            <a class="pontos_fortes_link" href="../pages/pagina2.html">Pagina 2</a>
+        <article class="pontosTuristicos__article">
+            <a class="pontosTuristicos__link" href="../pages/pagina2.html" target="_blank">
+                <img class="pontosTuristicos__img" src="./img/icone_rodape.png">
+            </a>
+            <h2 class="pontosTuristicos__titulo">Ponto Turístico 2</h2>
+            <p class="pontosTuristicos__paragrafo">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque sem sit amet massa convallis
+                euismod.
+            </p>
         </article>
-        <article class="pontos_fortes_link">
-            <img class="pontos_fortes_icone" src="./img/icone_rodape.png">
-            <a class="pontos_fortes_link" href="../pages/pagina2.html">Pagina 3</a>
+        <article class="pontosTuristicos__article">
+            <a class="pontosTuristicos__link" href="../pages/pagina2.html" target="_blank">
+                <img class="pontosTuristicos__img" src="./img/icone_rodape.png">
+            </a>
+            <h2 class="pontosTuristicos__titulo">Ponto Turístico 3</h2>
+            <p class="pontosTuristicos__paragrafo">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque sem sit amet massa convallis
+                euismod.
+            </p>
         </article>
     </section>
     <section class="newsletter">
-        <h1 class="titulo">Lorem ipsum dolor sit amet.</h1 class="titulo">
-        <h2>Lorem ipsum dolor sit amet. Ea provident dicta qui iusto quasi a dicta dicta sed voluptatem minima.
-            In quam sint ut dolores ducimus sunt dolorem.</h2>
-        <form class="newsletter_form" action="">
-            <label class="formulario__label" for="nome">Nome</label>
-            <input class="formulario__nome" type="text" id="nome" maxlength="100" name="nome"
-                placeholder="Seu nome completo">
-            <label class="formulario__label" for="email">E-mail</label>
-            <input class="formulario__email" type="email" id="email" name="email" placeholder="Digite seu melhor email">
-            <button type="submit">Enviar</button>
+        <h1 class="newsletter__titulo">Assine Nossa Newsletter :)</h1 class="titulo">
+        <p class="newsletter__paragrafo">
+            Lorem ipsum dolor sit amet. Ea provident dicta qui iusto quasi a dicta dicta sed voluptatem minima.
+            In quam sint ut dolores ducimus sunt dolorem.
+        </p>
+        <form class="newsletter__formulario" action="">
+            <div class="formulario__itens">
+                <label class="formulario__label" for="nome">Nome</label>
+                <input class="formulario__input" type="text" maxlength="100" id="nome" name="nome"
+                    placeholder="Seu nome completo">
+            </div>
+            <div class="formulario__itens">
+                <label class="formulario__label" for="email">E-mail</label>
+                <input class="formulario__input" type="email" id="email" name="email"
+                    placeholder="Digite seu melhor email">
+            </div>
         </form>
     </section>
     <footer class="rodape">
-        <div>
-            <h3>Lorem ipsum dolor.</h3>
-        </div>
+        <p class="rodape__paragrafo">Todos os direitos reservados - Nome da Empresa</p>
+        <p class="rodape__paragrafo">Av. Lorem Ipsum, silor domor xyz - Estado XY</p>
     </footer>
 </body>
 

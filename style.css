@@ -1,108 +1,99 @@
-.corpo{
+/*CORPO*/
+
+.corpo {
     background-color: rgb(41, 41, 41);
-    width: 100%;
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box; 
 }
-.cabecalho{
+
+/*CABEÇALHO*/
+
+.cabecalho {
     height: 200px;
-    display: block;
-    
+    width: 100%; 
 }
-.principal{
-    position: relative;
-    height: 100%;
-    background-image: url("./img/fundo2.jpg");
-    background-repeat:no-repeat;
-    background-size: 1120px 800px;
-    margin: 0px;
-    padding: 0px;   
-    height: 794px; 
-    
+
+.cabecalho__img {
+    width: 200px;
+    float: left;
 }
-.pontos_fortes{
-    height: 130px;
-    background-color: rgb(0, 0, 0);
-    width: 1176px;
-}
-.link{
+
+.cabecalho__link {
     text-decoration: none;
     float: left;
     font-size: 30px;
     margin-top: 60px;
     margin-left: 40px;
-    border:solid;
+    border: solid;
     border-radius: 2px;
     border-color: black;
-    color: #ff5800;
-    
+    color: #ff5800; 
 }
-.cabecalho__logo{
-    width: 200px;
-    right: 200px;
-    float: left;
-    margin-left: 0px;
-    
+
+.cabecalho__redesSociais {
+    float: right;
+    margin-right: 30px;
 }
-.redes_sociais_logo{
+
+.cabecalho__redesSociais__img {
     width: 40px;
     right: 40px;
     margin-left: 5px;
     margin-top: 60px;
 }
-.fundo_corpo{
-    display: inline-block;
-    background-image: image-set;
-}  
-.titulo{
+
+/*CONTEÚDO PRINCIPAL*/
+
+.principal {
+    width: 100%;
+    height: 600px;
+}
+
+.chamadaPrincipal {
+    float: left;
+    text-align: justify;
+    width: calc(100% - 480px);
+    height: inherit;
+    padding: 20px;
+    background-image: url("./img/fundo2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+	background-position: center center;
+}
+
+.chamadaPrincipal__titulo {
     color: #ff5800;
 } 
-.principal__info{
-    display: inline-block;
+
+.cadastro {
+    float: right;
+    background-color: #ff5800;
+    width: 400px;
+    height: inherit;
     text-align: justify;
-    width: 49%;
-    position: relative;
-    margin: 2px;
-    padding: 0px;
-    
-}
-.principal__formulario{
-    display: inline-block;
-    background-color:#ff5800;
-    width: 50%;
-    text-align: justify;
-    position: relative;
-    margin: 0px;
-    padding: 0px;
-    height: 794px; 
+    padding: 20px;
 }
 
-.formulario__grupo{
-    margin: 3px;
-    padding: 1px;
+.cadastro__titulo {
+    font-family: cursive;
 }
 
-.formulario__label{
-    display:block;
-    clear:left;
+.formulario__itens .formulario__label {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     color: #FFF7F5;
     margin: 5px;
-    padding: 1px;
 }
 
-.formulario__label_check{
-    display:inline-block;
-    clear:left;
+.formulario__radios .formulario__label, .formulario__checkbox .formulario__label {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     color: #FFF7F5
 }
 
-.formulario__texto{
-    display:block;
-    clear:left;
+.formulario__input {
+    display: block;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     width: 98%;
@@ -110,69 +101,112 @@
     margin: 5px;
     padding: 1px;
     border-width: 1px ;
+    outline: none;
 }
 
-.formulario__button{
+.formulario__button {
     margin: 5px;
     padding: 1px;  
 }
 
-.formulario__button_item{
+.formulario__button button {
     width: 100px;
     height: 25px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     color: #FFFFFF;
     background-color: #00206B;
-    border:1px;
+    border: 1px;
+    cursor: pointer;
 }
 
-.formulario__enunciado {
-    text-align: justify;
-    color: azure; 
+.formulario__button button:hover {
+    color: chocolate;
 }
 
-.pontos_fortes{
-width: 100%;
-display: inline-block;
+/*CONTEÚDO ADICIONAL*/
+
+.pontosTuristicos {
+	width: calc(100% - 60px);
+	display: inline-block;
+	background-color: rgba(0, 0, 0, 0.3);
+	padding: 30px;
+	text-align: center;
 }
 
-.pontos_fortes_link{
-    display: inline-block;
-    width: 200px;
-    right: 10px;
-    border-color: aliceblue;
-    border-style: double;
-    margin:10px;
+.pontosTuristicos__article {
+	width: 33.33%;
+	float: left;
 }
 
-.pontos_fortes_icone{
+.pontosTuristicos__titulo {
+    color: #ff5800;
+}
+
+.pontosTuristicos__paragrafo {
+	width: 90%;
+	text-align: justify;
+}
+
+.pontosTuristicos__img{
     width: 60px;
     height: 60px;
 }
-h4{
-    color: #ff5800;
-    margin-left: 50px;
-}
-.pontos_fortes_link{
-    color: white; 
-    font-size: 12px;
-    margin-top: 350px;
-    text-decoration: none;
-    margin-left: 12px;
-}
-h2{
-    color: #ff5800;
-}
 
 .newsletter{
-    width: 100%;
+    width: calc(100% - 60px);
     display: inline-block;
+    background-color: #ff5800;
+    padding: 30px;
 }
 
-.rodape{
-    height: 60px;
-    background-color: rgb(0, 0, 0);
-    width: 1176px;
+/*RODAPÉ*/
+
+.rodape {
+    display: inline-block;
+	width: calc(100% - 20px);
+	border-top: 2px solid #888888;
+	margin-top: 30px;
+	padding: 10px;
+	background-color: rgba(0, 0, 0, 0.5);
+	text-align: center;
+}
+
+.rodape__paragrafo {
+    font-family: cursive;
     color: white;
+}
+
+@media screen and (max-width: 1024px) {
+	.chamadaPrincipal {
+		width: 80%;
+		float: none;
+		display: block;
+		margin-top: 0px; 
+		margin-bottom: 60px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.cadastro {
+		width: 80%;
+		max-width: 400px;
+		float: none;
+		display: block;
+		margin: 0 auto;
+	}
+
+	.pontosTuristicos {
+		width: 100%;
+		float: none;
+		display: inline-block;
+	}
+
+	.newsletter  {
+		width: 80%;
+		max-width: 300px;
+		float: none;
+		display: block;
+		margin: 0 auto;
+	}
 }
