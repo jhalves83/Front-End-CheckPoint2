@@ -121,10 +121,10 @@ h1 {
     font-weight: 600;
 }
 
-.formulario__input, .formulario__button, .formulario__checkbox, .formulario__radio {
+.grow {
     transition: 0.2s;
 }
-.formulario__input:hover, .formulario__button:hover, .formulario__checkbox:hover, .formulario__radio:hover {
+.grow:hover {
     transform: scale(1.05);
 }
 
@@ -306,6 +306,8 @@ h1 {
 
     .pontosTuristicos__article{
         width: 100%;
+        flex-direction: column;
+        text-align: center;
     }
 
     .newsletter__formulario {
