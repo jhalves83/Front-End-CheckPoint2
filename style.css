@@ -121,6 +121,13 @@ h1 {
     font-weight: 600;
 }
 
+.formulario__input, .formulario__button, .formulario__checkbox, .formulario__radio {
+    transition: 0.2s;
+}
+.formulario__input:hover, .formulario__button:hover, .formulario__checkbox:hover, .formulario__radio:hover {
+    transform: scale(1.05);
+}
+
 .formulario__input {
     background-color: #fff;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
@@ -184,7 +191,6 @@ h1 {
     border-radius: 5px;
     padding: 15px 50px;
     cursor: pointer;
-    transition: 0.2s;
 }
 
 .formulario__button:hover {
@@ -254,13 +260,15 @@ h1 {
     margin: auto;
 }
 
-.newsletter__formulario label{
-    position: absolute;
+.newsletter__formulario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
 }
 
-.newsletter__formulario input{
-    margin-right: 10px;
-    margin-left: 10px;
+.newsletter__formulario label{
+    position: absolute;
 }
 
 /*RODAPÉ*/
@@ -297,6 +305,14 @@ h1 {
     }
 
     .pontosTuristicos__article{
+        width: 100%;
+    }
+
+    .newsletter__formulario {
+        flex-direction: column;
+    }
+
+    .newsletter__formulario input, button {
         width: 100%;
     }
 }
