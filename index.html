@@ -35,6 +35,7 @@
 
     <!--CSS-->
     <link rel="stylesheet" href="./style.css" type="text/css">
+    <link rel="stylesheet" href="./modal.css" type="text/css">
 
     <!-- Boostrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
@@ -44,7 +45,7 @@
     <header class="linha linha__centro cabecalho">
         <img class="cabecalho__logo" src="./img/logo.png" alt="Logo do grupo 6 viagens">
         <nav class="cabecalho__nav">
-            <a class="cabecalho__link" href="../pages/pagina1.html" target="_blank">Pagina 1</a>
+            <a class="cabecalho__link" href="https://jhalves83.github.io/FrontEnd-Checkpoint1/" target="_blank">Taubaté</a>
             <a class="cabecalho__link" href="../pages/pagina2.html" target="_blank">Pagina 2</a>
             <a class="cabecalho__link" href="../pages/pagina3.html" target="_blank">Pagina 3</a>
             <a class="cabecalho__link" href="../pages/pagina4.html" target="_blank">Pagina 4</a>
@@ -68,13 +69,10 @@
         <section class="linha chamadaPrincipal">
             <div class="chamadaPrincipal__conteudo">
                 <h1 class="chamadaPrincipal__titulo">
-                    Debitis mollitia et aliquid error aut dolorem ipsam.
+                    Encravada entre a serra e o mar, Ubatuba é um dos mais espetaculares e bem preservados destinos do Litoral Norte de São Paulo
                 </h1>
                 <p class="chamadaPrincipal__paragrafo">
-                    Lorem ipsum dolor sit amet.
-                    Est modi quibusdam ex labore recusandae qui fugit omnis ut repudiandae doloribus ut
-                    vero doloribus ut doloremque fugiat! Sed dolorem quia rem blanditiis eius ut deleniti earum est
-                    excepturi iste.
+                    Ubatuba é um município costeiro no estado de São Paulo, no Brasil, rodeado pela floresta tropical do Parque Nacional da Serra do Mar. A praia Itamambuca, no nordeste, é conhecida pela forte rebentação das ondas. As águas à volta da Ilha Anchieta são uma área de alimentação para as tartarugas marinhas. Em Ubatuba, o projeto TAMAR protege as tartarugas e tem um centro de visitantes com tanques. Existem mais criaturas marinhas em exibição no Aquário de Ubatuba
                 </p>
             </div>
             <div class="chamadaPrincipal__fundo"></div>
@@ -148,47 +146,98 @@
         <div class='linha'>
             <article class="pontosTuristicos__article">
                 <div>
-                    <a class="pontosTuristicos__link" href="../pages/pagina2.html" target="_blank">
+                    <a class="pontosTuristicos__link" href="#modalanchieta">
                         <img class="pontosTuristicos__img" src="./imagens/Ilha Anchieta (4).jpg">
                     </a>
                 </div>
                 <div>
                     <h2 class="pontosTuristicos__itemsTitulo">Ilha Anchieta</h2>
                     <p class="pontosTuristicos__paragrafo">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque sem sit amet massa convallis
-                        euismod.
+                        Localizado no município de Ubatuba, o Parque Estadual da Ilha Anchieta é uma área de proteção ambiental criado através do decreto de lei 9 629 de 29 de Março de 1977 do Estado de São Paulo e administrado pelo Instituto Florestal, órgão vinculado à Secretaria Estadual do Meio Ambiente.
                     </p>
                 </div>
+
+                <div id="modalanchieta" class="modal">
+                    <div class="modal-content">
+                        <div class="header">
+                            <h2>Ilha Anchieta</h2>
+                        </div>
+                        <div class="copy">
+                            <img class="pontosTuristicos__img" src="./imagens/Ilha Anchieta (4).jpg">
+                            <p>Localizado no município de Ubatuba, o Parque Estadual da Ilha Anchieta é uma área de proteção ambiental criado através do decreto de lei 9 629 de 29 de Março de 1977 do Estado de São Paulo e administrado pelo Instituto Florestal, órgão vinculado à Secretaria Estadual do Meio Ambiente</p>
+                        </div>
+                        <div class="cf footer">
+                            <a href="#" class="btn">Fechar</a>
+                        </div>
+                    </div>
+                    <div class="overlay"></div>
+                </div>
+
+
             </article>
             <article class="pontosTuristicos__article">
                 <div>
-                    <a class="pontosTuristicos__link" href="../pages/pagina2.html" target="_blank">
-                        <img class="pontosTuristicos__img" src="./imagens/Ilha Anchieta - Praia do Porto (2).jpg">
+                    <a class="pontosTuristicos__link" href="#modalpromirim">
+                        <img class="pontosTuristicos__img" src="./imagens/Ilha do Prumirim.jpg">
                     </a>
                 </div>
                 <div>
-                    <h2 class="pontosTuristicos__itemsTitulo">Praia do Porto</h2>
+                    <h2 class="pontosTuristicos__itemsTitulo">Ilha do Promirim</h2>
                     <p class="pontosTuristicos__paragrafo">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque sem sit amet massa convallis
-                        euismod.
+                        Com águas rasas e calmas, a praia merece figurar na lista das melhores praias de Ubatuba para banho e também para ir com a famila. Mas talvez a melhor opção do que fazer na ilha do Prumirim seja mergulhar.
                     </p>
                 </div>
+
+                <div id="modalpromirim" class="modal">
+                    <div class="modal-content">
+                        <div class="header">
+                            <h2>Ilha do Promirim</h2>
+                        </div>
+                        <div class="copy">
+                            <img class="pontosTuristicos__img" src="./imagens/Ilha do Prumirim.jpg">
+                            Com águas rasas e calmas, a praia merece figurar na lista das melhores praias de Ubatuba para banho e também para ir com a famila. Mas talvez a melhor opção do que fazer na ilha do Prumirim seja mergulhar.
+                        </div>
+                        <div class="cf footer">
+                            <a href="#" class="btn">Fechar</a>
+                        </div>
+                    </div>
+                    <div class="overlay"></div>
+                </div>
+
             </article>
             <article class="pontosTuristicos__article">
                 <div>
-                    <a class="pontosTuristicos__link" href="../pages/pagina2.html" target="_blank">
+                    <a class="pontosTuristicos__link" href="#modalselinha">
                         <img class="pontosTuristicos__img" src="./imagens/Ilha da Selina - Menor praia do mundo.jpg">
                     </a>
                 </div>
                 <div>
                     <h2 class="pontosTuristicos__itemsTitulo">Ilha da Selina</h2>
                     <p class="pontosTuristicos__paragrafo">
-                       A Ilha da Selina tem a menor praia do mundo inteiro!
+                        A ilha da Selinha é recoberta por espécies vegetais de predominância da Mata Atlântica, não é habitada e seus entornos são de costões rochosos. Um fato muito interessante é que entre as duas enormes formações rochosas, temos uma minúscula faixa de areia formando a “menor praia de Ubatuba”.
                     </p>
                 </div>
+
+                <div id="modalselinha" class="modal">
+                    <div class="modal-content">
+                        <div class="header">
+                            <h2>Ilha da Selina</h2>
+                        </div>
+                        <div class="copy">
+                            <img class="pontosTuristicos__img" src="./imagens/Ilha Anchieta (4).jpg">
+                            A ilha da Selinha é recoberta por espécies vegetais de predominância da Mata Atlântica, não é habitada e seus entornos são de costões rochosos. Um fato muito interessante é que entre as duas enormes formações rochosas, temos uma minúscula faixa de areia formando a “menor praia de Ubatuba”.
+                        </div>
+                        <div class="cf footer">
+                            <a href="#" class="btn">Fechar</a>
+                        </div>
+                    </div>
+                    <div class="overlay"></div>
+                </div>
+
             </article>
         </div>
     </section>
+
     <section class="linha newsletter">
         <div class='newsletter__conteudo'>
             <h1 class="sectionTitulo">Assine Nossa Newsletter :)</h1>
@@ -210,6 +259,13 @@
     <footer class="rodape">
         <p class="rodape__paragrafo">&copy; Todos os Direitos Reservados - Prefeitura da Cidade de Ubatuba</p>
     </footer>
+<script>
+    function abrirmodal()
+    {
+$("html,body").css({"overflow":"hidden"});
+    }   
+
+</script>
 </body>
 
 </html>
