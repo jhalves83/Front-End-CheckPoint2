@@ -33,6 +33,7 @@ h1 {
     height: 100px;
     padding: 20px;
     justify-content: space-between;
+    border-bottom: solid 2px #ff5800;
 }
 
 .cabecalho__logo {
@@ -120,12 +121,6 @@ h1 {
     font-weight: 600;
 }
 
-.formulario__label_radiocheck {
-    font-weight: 400;
-    margin: 0;
-    padding: 0;
-}
-
 .formulario__input {
     background-color: #fff;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
@@ -147,10 +142,15 @@ h1 {
     color: #ff5800;
 }
 
+.formulario__label_radiocheck {
+    font-weight: 400;
+    margin-right: 15px;
+}
+
 .formulario__radio, .formulario__checkbox {
     appearance: none;
     border: 3px solid #fff;
-    margin-right: 10px;
+    margin-right: 5px;
     padding: 8px;
 }
 
@@ -179,7 +179,8 @@ h1 {
 
 .formulario__button {
     color: #fff;
-    border: 0;
+    font-size: 0.9rem;
+    border: 1px solid #00206B;
     border-radius: 5px;
     padding: 15px 50px;
     cursor: pointer;
@@ -251,6 +252,15 @@ h1 {
 
 .newsletter__conteudo {
     margin: auto;
+}
+
+.newsletter__formulario label{
+    position: absolute;
+}
+
+.newsletter__formulario input{
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 /*RODAPÉ*/

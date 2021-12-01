@@ -43,7 +43,9 @@
 
 <body>
     <header class="linha linha__centro cabecalho">
-        <img class="cabecalho__logo" src="./img/logo.png" alt="Logo do grupo 6 viagens">
+        <a href="." class="cabecalho__logo">
+            <img class="cabecalho__logo" src="./img/logo.png" alt="Logo do grupo 6 viagens">
+        </a>
         <nav class="cabecalho__nav">
             <a class="cabecalho__link" href="https://jhalves83.github.io/FrontEnd-Checkpoint1/" target="_blank">Taubaté</a>
             <a class="cabecalho__link" href="../pages/pagina2.html" target="_blank">Pagina 2</a>
@@ -51,13 +53,13 @@
             <a class="cabecalho__link" href="../pages/pagina4.html" target="_blank">Pagina 4</a>
         </nav>
         <div class="cabecalho__redesSociais">
-            <a href="https://www.facebook.com" class="redesSociais__icone" target="_blank">
+            <a href="http://facebook.com/seturubatuba" class="redesSociais__icone" target="_blank">
                 <i class="bi bi-facebook"></i>
             </a>
-            <a href="https://www.instagram.com" class="redesSociais__icone"n target="_blank">
+            <a href="http://instagram.com/ubatuba_pmu" class="redesSociais__icone"n target="_blank">
                 <i class="bi bi-instagram"></i>
             </a>
-            <a href="https://twitter.com" class="redesSociais__icone" target="_blank">
+            <a href="http://www.twitter.com/UbatubaPref" class="redesSociais__icone" target="_blank">
                 <i class="bi bi-twitter"></i>
             </a>
             <a href="https://www.youtube.com" class="redesSociais__icone" target="_blank">
@@ -81,56 +83,56 @@
             <h1 class="cadastro__titulo">
                 Preencha o formulário e inicie a sua jornada
             </h1>
-            <form class="cadastro__formulario" action="" method="get">
+            <form class="cadastro__formulario" action="" method="post">
                 <div class="formulario__itens">
                     <label class="label__oculta" for="nome">Nome</label>
                     <input class="formulario__input formulario__inputLargo" type="text" maxlength="100" id="nome" name="nome"
-                        placeholder="Seu nome completo">
+                        placeholder="Seu nome completo" required>
                 </div>
                 <div class="formulario__itens">
                     <label class="label__oculta" for="email">E-mail</label>
                     <input class="formulario__input formulario__inputLargo" type="email" id="email" name="email"
-                        placeholder="Digite seu melhor email">
+                        placeholder="Digite seu melhor email" required>
                 </div>
                 <div class="formulario__itens">
                     <label class="label__oculta" for="telefone">Telefone</label>
                     <input class="formulario__input formulario__inputLargo" type="tel" id="telefone" name="telefone"
-                        placeholder="Informe seu telefone">
+                        placeholder="Informe seu telefone" required>
                 </div>
                 <div class="formulario__itens">
                     <label class="label__oculta" for="dataNascimento">Data de Nascimento</label>
-                    <input class="formulario__input formulario__inputLargo" type="date" id="dataNascimento" name="dataNascimento">
+                    <input class="formulario__input formulario__inputLargo" type="date" id="dataNascimento" name="dataNascimento" required>
                 </div>
                 <div class="formulario__itens">
                     <p class="formulario__label">Você é maior de idade?</p>
                     <div>
-                        <input class='formulario__radio' type="radio" id="maiorIdade" name="faixaidade" value="sim">
+                        <input class='formulario__radio' type="radio" id="maiorIdade" name="faixaidade" value="sim" required>
                         <label class="formulario__label_radiocheck" for="maiorIdade">Sim</label>
-                        <input class='formulario__radio' type="radio" id="menorIdade" name="faixaidade" value="nao">
+                        <input class='formulario__radio' type="radio" id="menorIdade" name="faixaidade" value="nao" required>
                         <label class="formulario__label_radiocheck" for="menorIdade">Não</label>
                     </div>
                 </div>
                 <div class="formulario__itens formulario__select">
                     <label class="label__oculta" for="pontoTuristico">Selecione um ponto turístico na cidade</label>
-                    <select id="pontoTuristico" name="pontoTuristico" class="formulario__input formulario__inputLargo">
+                    <select id="pontoTuristico" name="pontoTuristico" class="formulario__input formulario__inputLargo" required>
                         <option selected disabled>Selecione um ponto turístico na cidade</option>
-                        <option value="opcao1">Opção 1</option>
-                        <option value="opcao2">Opção 2</option>
-                        <option value="opcao3">Opção 3</option>
+                        <option value="opcao1">Ilha Anchieta</option>
+                        <option value="opcao2">Ilha do Promirim</option>
+                        <option value="opcao3">Ilha da Selina</option>
                     </select>
                 </div>
                 <div class="formulario__itens">
                     <p class="formulario__label">Selecione seu(s) interesse(s) na cidade</p>
                     <div>
-                        <input class='formulario__checkbox' type="checkbox" id="turista" name="turista" value="turista">
+                        <input class='formulario__checkbox' type="checkbox" id="turista" name="turista" value="turista" required>
                         <label class="formulario__label_radiocheck" for="turista">Turista</label>
                     </div>
                     <div>
-                        <input class='formulario__checkbox' type="checkbox" id="residente" name="residente" value="residente">
+                        <input class='formulario__checkbox' type="checkbox" id="residente" name="residente" value="residente" required>
                         <label class="formulario__label_radiocheck" for="residente">Residente</label>
                     </div>
                     <div>
-                        <input class='formulario__checkbox' type="checkbox" id="estudante" name="estudante" value="estudante">
+                        <input class='formulario__checkbox' type="checkbox" id="estudante" name="estudante" value="estudante" required>
                         <label class="formulario__label_radiocheck" for="estudante">Estudante</label>
                     </div>
                 </div>
@@ -242,16 +244,15 @@
         <div class='newsletter__conteudo'>
             <h1 class="sectionTitulo">Assine Nossa Newsletter :)</h1>
             <p class="newsletter__paragrafo">
-                Lorem ipsum dolor sit amet. Ea provident dicta qui iusto quasi a dicta dicta sed voluptatem minima.
-                In quam sint ut dolores ducimus sunt dolorem.
+                Fique por dentro de tudo o que acontece em turismo na Cidade de Ubatuba, não perca nenhum evento sazonal.
             </p>
-            <form class="newsletter__formulario" action="">
+            <form class="newsletter__formulario" action="" method="post">
                 <label class="label__oculta" for="newsletterNome">Nome</label>
                 <input class="formulario__input" type="text" maxlength="100" id="newsletterNome" name="newsletterNome"
-                placeholder="Seu nome completo">
+                placeholder="Seu nome completo" required>
                 <label class="label__oculta" for="newsletterEmail">E-mail</label>
-                <input class="formulario__input" type="newsletterEmail" id="newsletterEmail" name="newsletterEmail"
-                placeholder="Digite seu melhor email">
+                <input class="formulario__input" type="email" id="newsletterEmail" name="newsletterEmail"
+                placeholder="Digite seu melhor email" required>
                 <button class='formulario__button button__azul' type="submit">Enviar</button>
             </form>
         </div>
